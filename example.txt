@@ -1,0 +1,63 @@
+<meta>
+	author="dawid klatkiewicz"
+	published="2/11/2019"
+</meta>
+
+<title>The Future of artificial inteligence</title>
+
+<intro>
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+	when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+	but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+	Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+	including versions of Lorem Ipsum.
+</intro>
+
+<body>
+
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis neque non turpis
+	venenatis feugiat sed sit amet velit. Quisque posuere mollis bibendum. In ligula tellus,
+	ornare semper commodo sed.
+	
+	<quote
+		author="jerry fischer"
+		title="watson. the computer that changed it all."
+		published="11/2/2005"
+		publisher="greenwood press"
+		location="new york, new york"
+	>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus, tellus vitae gravida egestas,
+	tellus enim blandit justo, non imperdiet metus enim varius dui. Aliquam ultrices magna vitae pharetra pretium.
+	Integer nec turpis semper, pellentesque lectus at, tristique neque. Morbi vitae tincidunt nisi. Sed eget mollis
+	quam. Proin suscipit ante.
+	</quote>
+
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam feugiat consectetur felis, sit amet 
+	lacinia sapien sodales vel. Mauris iaculis enim vitae odio commodo, eu condimentum lacus finibus. 
+	Integer accumsan iaculis erat, ut pulvinar ex cursus nec. Duis vel tellus et sem vulputate pretium. 
+	Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec faucibus interdum lorem eu condimentum. 
+	Integer sollicitudin euismod purus, pulvinar eleifend mauris dignissim non. Duis vitae tellus dapibus, 
+	ullamcorper diam at, dapibus dolor. Phasellus enim turpis, hendrerit nec ipsum id, rhoncus rutrum augue. 
+	Vivamus nec mi in mi aliquam pretium. Quisque tempor lectus eu sagittis tincidunt. Proin quis massa et lorem 
+	ultricies lobortis. Praesent bibendum venenatis sapien eget vehicula.Vestibulum mollis vulputate magna et sagittis.
+	Quisque arcu lorem, gravida mollis ante tincidunt, molestie accumsan urna.
+	Donec eleifend ornare tellus et gravida. Suspendisse posuere, quam eleifend mollis lobortis,
+	ex neque tincidunt dolor, sed rhoncus nulla sem eget odio. Quisque lacus nibh, pulvinar sed iaculis et,
+	bibendum in libero. Curabitur rutrum placerat dui id ultricies. Nam egestas sapien in quam porta varius. Morbi lacus metus,
+	lobortis sit amet accumsan at, faucibus vel lectus. Vivamus a eros a justo tristique vestibulum. Praesent ut blandit arcu.
+	Nullam hendrerit dui ut ipsum hendrerit porttitor. Nulla nec augue non nibh laoreet ornare. Sed non urna nec orci
+	sollicitudin cursus. Morbi et luctus ipsum. Quisque vehicula, ante in ultricies molestie, velit dui vestibulum nibh, sed
+	rhoncus quam arcu ut tortor. Praesent iaculis blandit lacus vitae semper. Nulla augue ex, bibendum vitae urna finibus, fringilla
+	congue augue. Morbi ultricies mi lectus, ut accumsan tortor condimentum id. Curabitur hendrerit congue purus. Sed egestas velit vitae
+	lacus suscipit pretium. Pellentesque sed ligula eu nunc tempor congue eu dictum felis. Aliquam condimentum odio consequat nibh mattis efficitur.
+	In tempus, magna ut sodales dignissim, turpis justo ullamcorper.
+
+</body>
+
+<outro>
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+	when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+	but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+	Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+	including versions of Lorem Ipsum.
+</outro>
