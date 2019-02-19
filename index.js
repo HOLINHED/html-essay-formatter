@@ -1,5 +1,6 @@
 'use strict'
 
+import parse from "modules/parser.js";
 
 //FILE READER
 if (process.argv.length < 3){
@@ -14,5 +15,7 @@ if (process.argv.length < 3){
 const fs = require('fs'), filename = process.argv[2];
 const file = fs.readFile(filename, 'utf8', function(err, data) {
 	if (err) throw err;
-	parse(data);
+	
+	console.log(data);
+
 });

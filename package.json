@@ -1,11 +1,16 @@
 {
   "name": "htmlesseyparser",
   "version": "1.0.0",
-  "description": "",
+  "description": "Transforms your ugly text files into beautiful HTML files.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node start.js example.txt"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Dawid klatkiewcz",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/register": "^7.0.0"
+  }
 }
