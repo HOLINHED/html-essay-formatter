@@ -7,8 +7,8 @@ const ParseAttribute = require('../modules/helpers/parseAttribute.js');
 const raw = 
 `
 <meta>
-author="dawid klatkiewicz"
-published="07/02/2000"
+   author="dawid klatkiewicz"
+   published="07/02/2000"
 </meta>
 `
 

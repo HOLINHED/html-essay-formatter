@@ -6,19 +6,30 @@
  * @param {String} tag The desired tag to parse data from
  * 
  * @returns {String} Whatever is between the specified tag
+ *                   replacing \n with a space
  */
 
 function ParseTag(raw, tag) {
 
-   const split = raw.split(`<${tag}>`);
+   // Isolated whatever is between specifid tag
+   const isolated = raw.split(`<${tag}>`)[1]
+      .split(`</${tag}>`)[0];
 
-   const partOne = split[1];
+   // Splits string at all \n and removes empty strings
+   const split = isolated.split('\n')
+      .filter(string => string.length > 0);
 
-   const split2 = partOne.split(`</${tag}>`);
+   //sets initial value at 0 because there could be a \n
+   //at the first sentence.
+   let string = split[0].trim();
 
-   const partTwo = split2[0];
+   //adds every other string with \n replaced with a regular space
+   for (let i = 1; i < split.length; i++) {
+      string += split[i].replace(/\s\s+/g,' ');
+   }
 
-   return partTwo;
+   return string;
+
 }
 
 module.exports = ParseTag;
