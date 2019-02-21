@@ -12,30 +12,25 @@ function ParseAttribute(raw) {
    // What is returned
    let attributes = {};
 
-   //Splits string by new line \n
-   const atts = raw.split('\n')
-      .filter(string => string.length > 0);
+   //Splits string in all double quotes
+   const split = raw.split("\"");
 
-   //Iterates through every line
-   for (let att of atts) {
+   // Iterates through string array at every value
+   // since every other entry will be value, and every
+   // entry before that will be a key.
+   for (let i = 1; i < split.length; i += 2) {
 
-      // Splits at = to get into [key, value] format
-      const split = att.split('=');
+      // Formatting key/value pairs (removing = from key and trimming)
+      // emptry space from both.
+      const key = split[i - 1].replace(/=/g,'').trim();
+      const value = split[i].trim();
 
-      // Iterates through split key/value array 
-      for (let i = 1; i < split.length; i += 2) {
-
-         // Creates key value pair to be added into the object
-         const key = split[i - 1].trim();
-         const value = split[i].trim().replace(/"/g, '');
-
-         // Adds key vaule pair to ojbect
-         attributes = {
-            ...attributes,
-            [key]: value,
-         }
-
+      // Inserting key/value into object
+      attributes = {
+         ...attributes,
+         [key]: value,
       }
+
    }
 
    return attributes;
