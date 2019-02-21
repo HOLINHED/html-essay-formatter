@@ -22,6 +22,5 @@ const meta = ParseTag(raw, 'meta');
 
 const metaAtt = ParseAttribute(meta);
 
-
 console.log("Status:",
    JSON.stringify(response) == JSON.stringify(metaAtt) ? "PASSING" : "FAILING");

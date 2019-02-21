@@ -19,13 +19,15 @@ function ParseTag(raw, tag) {
    const split = isolated.split('\n')
       .filter(string => string.length > 0);
 
-   //sets initial value at 0 because there could be a \n
-   //at the first sentence.
+   // sets initial value at 0 because there could be a \n
+   // at the first sentence.
    let string = split[0].trim();
 
-   //adds every other string with \n replaced with a regular space
+   // adds every other string with \n replaced with a regular space
+   // and all \t removed
    for (let i = 1; i < split.length; i++) {
-      string += split[i].replace(/\s\s+/g,' ');
+      string += split[i].replace(/\s\s+/g,' ')
+                  .replace(/\t/g,'');
    }
 
    return string;
