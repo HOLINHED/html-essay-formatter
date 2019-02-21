@@ -9,11 +9,36 @@
  */
 function ParseAttribute(raw) {
 
-   const split = raw.split('=');
+   // What is returned
+   let attributes = {};
 
-   // TODO: Make this create the attibutes stuff lol
+   //Splits string by new line \n
+   const atts = raw.split('\n')
+      .filter(string => string.length > 0);
 
-   return split;
+   //Iterates through every line
+   for (let att of atts) {
+
+      // Splits at = to get into [key, value] format
+      const split = att.split('=');
+
+      // Iterates through split key/value array 
+      for (let i = 1; i < split.length; i += 2) {
+
+         // Creates key value pair to be added into the object
+         const key = split[i - 1].trim();
+         const value = split[i].trim().replace(/"/g, '');
+
+         // Adds key vaule pair to ojbect
+         attributes = {
+            ...attributes,
+            [key]: value,
+         }
+
+      }
+   }
+
+   return attributes;
 
 }
 

@@ -42,7 +42,7 @@ function parse(raw) {
 
    // Parse meta tag
    const meta = ParseTag(raw, 'meta');
-   const metaAtt = ParseAttribute(meta, ['author', 'published']);
+   const metaAtt = ParseAttribute(meta);
 
    parsed.meta = metaAtt;
 
