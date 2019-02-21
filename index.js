@@ -1,6 +1,7 @@
 'use strict'
 
-import parse from "modules/parser.js";
+import parse from "./modules/parser.js";
+import generate from "./modules/generate.js";
 
 //FILE READER
 if (process.argv.length < 3){
@@ -16,6 +17,8 @@ const fs = require('fs'), filename = process.argv[2];
 const file = fs.readFile(filename, 'utf8', function(err, data) {
 	if (err) throw err;
 	
-	console.log(data);
+	const parsedData = parse(data);
+
+	generate(parsedData);
 
 });
