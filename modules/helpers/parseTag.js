@@ -27,7 +27,7 @@ function ParseTag(raw, tag) {
    // and all \t removed
    for (let i = 1; i < split.length; i++) {
       string += split[i].replace(/\s\s+/g,' ')
-                  .replace(/\t/g,'');
+         .replace(/\t/g,'');
    }
 
    return string;
